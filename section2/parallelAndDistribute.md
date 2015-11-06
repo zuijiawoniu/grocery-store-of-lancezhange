@@ -12,3 +12,4 @@
 
 避免死锁的**银行家算法**
 
+[分布式计算原理（讲稿合集）](http://dcg.ethz.ch/lectures/podc_allstars/)
