@@ -42,7 +42,37 @@
 
     比赛于2015年4月开始，5月结束（但测评服务目前仍然开放），7月份在 CVPR 2015 Large-scale Scene Understanding workshop 宣布结果。采用人工裁判，排在第一的还是人，后面两名则分别来自谷歌和微软（打了个平手）。
 
+- [Neural Storyteller](https://github.com/ryankiros/neural-storyteller)
+
+     所谓的看图说话。
 
 
-- [Neural storyteller](https://github.com/ryankiros/neural-storyteller)
-    由图片生成小故事
+
+### 视频描述
+视频内容描述是图面内容描述的自然延伸，在视频搜索，人机交互，为盲人讲述内容等场景中均有切实的需求。
+
+图片的内容描述，最后生成的句子的长度是不定长的，在视频描述中，多了一个不定长的变量：图片帧的个数。此外，现实视频中的物体繁多，场景多样，动作各异，这为视频内容描述带来了不小的困难。如何识别出最主要的内容也是难点，因为我们只想描述视频中最主要的部分，而不是面面俱到。
+
+LSTM 模型的成功。
+
+后来又加入了 attension, 
+
+基准数据集
+1. MSVD(microsoft video description corpus)
+2. MPII-MD(MPII movie description dataset)
+3. M-VAD(montreal video annotation dataset)
+
+- [LSMDC 2015](https://sites.google.com/site/describingmovies/)
+
+    The Large Scale MOvie Description Challenge, at ICCV 2015.
+
+### 图片检索
+
+主要还是用哈希。用到的哈希方法大概分为两种，一种是数据相关的(因此也被称为 L2H, 即 learning to hash)，一种是数据无关的，比如局部敏感哈希(LSH, locality-sensitive hashing，ANN 的一种)。
+
+L2H 既然是从数据中学习，自然又可以被分为两种：有监督的和无监督的。
+
+- [Feature Learning based Deep Supervised Hashing with Pairwise Labels](http://arxiv.org/abs/1511.03855)
+
+    采用用深度学习方法同时学习特征和哈希编码。
+

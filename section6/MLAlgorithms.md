@@ -3,7 +3,13 @@
 
 - 逻辑回归
    损失函数为交叉熵
+- 最近邻
+- 近似最近邻(ANN, approximate nearest neighbour)
 
+    - LSH(locality-sensitive hashing)
+
+        基本思想：将原始数据空间中的两个相邻数据点通过相同的映射或投影变换（projection）后，这两个数据点在新的数据空间中仍然相邻的概率很大，而不相邻的数据点被映射到同一个桶的概率很小  
+        参考博文：[局部敏感哈希介绍](http://blog.csdn.net/icvpr/article/details/12342159)
 - 决策树
 - CART
 - 感知机
@@ -32,27 +38,6 @@
 
 - 概率图模型
 - 条件随机场
-- CNN(卷积神经网络)
-    - VGG architecture
-    - 
-- RNN（recurrent neural networks）
-    RNN更加适合 sequential data.
-    - LSTM
-        [谷歌的邮件智能回复](http://googleresearch.blogspot.co.uk/2015/11/computer-respond-to-this-email.html)
-- 递归神经网络(Recursive Neural Nwtwork)
 
-- 深度学习(deep learning)
-    - 深度学习的核心在于学习多层次的表示（对应不同程度的抽象）
-    - data -> information -> knowledge ->  wisdom
-    - distributed representations
-    - [videolecture: 深度学习暑期学校](http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/),2015,蒙特利尔
-    - 
-
-- Memory Networks
-
-- RAM(Reasoning,Attention, Memory)
-
-- PageBrain
-    谷歌用以搜索结果排序的人工智能系统
 
 

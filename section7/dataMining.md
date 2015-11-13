@@ -31,3 +31,15 @@
 **`Keras`**在德语中的意思为‘号角’
 
 
+### [TF(tensorFlow)](http://tensorflow.org/)
+谷歌开源的第二代深度学习系统，参看 [Jeff Dean 的介绍](http://vdisk.weibo.com/s/tQWXdywczVZO) 第一代是 DistBelief, 其可扩展性较好，但灵活性不足
+
+然而 TF 一出，对其[性能的评测结果](https://github.com/soumith/convnet-benchmarks/issues/66)却并不理想，一时间舆论大哗。
+
+### [DMTK](http://www.dmtk.io/)
+DMTK(distributed machine learning toolkit)，由微软开源，包含DMTK分布式机器学习框架，LightLDA, Distributed (Multisense) Word Embedding等组件。
+
+
+
+
+
