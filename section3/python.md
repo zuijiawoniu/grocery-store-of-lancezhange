@@ -16,6 +16,8 @@
 5. `__init__()`,`__new__`
 6. `__repr__`, `__str__`
 7. `__exit__(self, type, value, traceback)`
+8. `__iter__`(通常和 `yield` 一起用以定义可迭代类)
+9. 
 
 
 
@@ -47,6 +49,13 @@
 函数装饰器接受一个可调用对象作为参数，并返回一个新的可调用对象。装饰器也可以带有参数，从而更为灵活。类装饰器同理。
 
 例如，上下文管理也可以用 *contexlib* 模块用装饰器的方式实现。
+
+@statcimethod
+
+@classmethod
+
+@property
+
 
 #### 闭式
 
@@ -98,7 +107,14 @@ debug： *pdb*模块
 
  2. 不定长无名参数 `\*args`(元组) 和 不定长有名参数 `\*\*kwargs`（列表）
  3. `python -m SimpleHTTPServer 8088` 文件共享从此 so easy.
+ 4. `self` 并非关键字，而只是一个约定俗成的变量名
+
 
 ### 参考资料
 - [stackoverflow 上一些 python 问题合集 ](http://pyzh.readthedocs.org/en/latest/python-questions-on-stackoverflow.html)
 - [python tips/intermediate python](http://book.pythontips.com/en/latest/index.html)
+
+- [关于 python 的面试题](https://github.com/taizilongxu/interview_python)
+
+
+- [The Best of the Best Practices(BOBP) GUide for Python](https://gist.github.com/sloria/7001839)

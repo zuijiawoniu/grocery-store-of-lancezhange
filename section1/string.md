@@ -13,8 +13,11 @@
 
 
 - 最长回文子串
-- KMP  
-    核心：next 数组
+
+### 搜索
+主要的搜索算法包括 KMP 和 Boyer-Moore, 以及 [Z algoithm](http://ivanyu.me/blog/2013/10/15/z-algorithm/). KMP 的核心在于 next 数组
+
+
 - 编辑距离  
     可允许的操作： 替换，插入，删除  
     思路： 递归

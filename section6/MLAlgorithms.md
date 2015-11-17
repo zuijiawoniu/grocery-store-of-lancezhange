@@ -10,6 +10,9 @@
 
         基本思想：将原始数据空间中的两个相邻数据点通过相同的映射或投影变换（projection）后，这两个数据点在新的数据空间中仍然相邻的概率很大，而不相邻的数据点被映射到同一个桶的概率很小  
         参考博文：[局部敏感哈希介绍](http://blog.csdn.net/icvpr/article/details/12342159)
+- 奇异值分解
+
+    [The Singular Value Decomposition, Applications and Beyond](http://arxiv.org/pdf/1510.08532.pdf)
 - 决策树
 - CART
 - 感知机

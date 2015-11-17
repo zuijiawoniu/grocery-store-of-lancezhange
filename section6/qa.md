@@ -1,6 +1,6 @@
 # 问答系统专题
 
-#### VQA(Visual Question Answering)
+### VQA(Visual Question Answering)
 回答一些关于图片的问题，因此需要**机器视觉**和**自然语言处理**协同作战，需要的智能程度是相当高的，因此也被认为可以取代图灵测试来衡量智能水平。
 
 - [VQA 挑战](http://www.visualqa.org/)
@@ -9,5 +9,9 @@
     ![图片问答示例](../images/vqachallenge.png)
 - [VQA_ICCV2015](http://www.visualqa.org/VQA_ICCV2015.pdf)
 
-    相关论文
 
+### 相关论文
+
+- [Exploring Models and Data for Image Question Answering](http://arxiv.org/abs/1505.02074)
+
+    一篇综述文章

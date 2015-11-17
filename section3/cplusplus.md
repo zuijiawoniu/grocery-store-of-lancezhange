@@ -55,3 +55,5 @@ static 关键字的作用：隐藏，持久化，初始化为0
 ## 魔鬼在细节之中
 - 赋值表达式的返回值即所赋值本身
 
+### 并行编程
+[gitbook: C++ 并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details)

@@ -6,7 +6,7 @@
 ### 顶尖研究机构
 - MSR
 
-- Facebook 的人工智能实验室 (FAIR)
+- Facebook 的人工智能实验室 (FAIR, facebook AI research)
 
     人员方面，有 Yann LeCun，有VC维和SVM的缔造者Vladimir Vapnik，提出随机梯度下降法的Léon Bottou，做出高性能PHP虚拟机HHVM的Keith Adams, 以及 Rob Fergus, Jason Weston, Marc'Aurelio Ranzato,  Tomas Mikolov, Florent Perronnin, Piotr Dollar, Hervé Jégou, Ronan Collobert, Yaniv Taigman等
 
@@ -14,55 +14,59 @@
 
 ### 模型
 
-- CNN(卷积神经网络)
-    - VGG architecture
-    - 
-- RNN（recurrent neural networks）
+##### CNN(卷积神经网络)
+- VGG architecture
 
-    RNN 的核心在于对当前的状态保留`记忆`（以隐变量的方式存在）。
+##### RNN（recurrent neural networks）
 
-    给定输入序列 $$(x_1,x_2, ..., x_T)$$, 一个标准的RNN通过如下迭代方程计算输出序列$$(y_1,y_2, ..., y_T)$$:
+[Awesome RNN](http://jiwonkim.org/awesome-rnn/)
 
-    $$
-    h_t = sigma(W^{hx}x-t + W^{hh}h_{t-1})
-    $$
+RNN 的核心在于对当前的状态保留`记忆`（以隐变量的方式存在）。
 
-    $$
-    y_t = W^{yh}h_t
-    $$
+给定输入序列 $$(x_1,x_2, ..., x_T)$$, 一个标准的RNN通过如下迭代方程计算输出序列$$(y_1,y_2, ..., y_T)$$:
 
-    所谓的记忆重现，就体现在了$$h_t$$ 与 $$h_{t-1}$$ 上了。
+$$
+h_t = sigma(W^{hx}x-t + W^{hh}h_{t-1})
+$$
 
-    此外，注意到，RNN 各层之间共享一套参数（由此极大减少了待学习的参数数量），训练用到的是 BPTT(backpropagation through time)。
+$$
+y_t = W^{yh}h_t
+$$
 
-    针对传统 RNN 的各种缺陷，有如下几种改进的 RNN 模型。
+所谓的记忆重现，就体现在了$$h_t$$ 与 $$h_{t-1}$$ 上了。
 
-    1. LSTM(long short term memory networks)
+此外，注意到，RNN 各层之间共享一套参数（由此极大减少了待学习的参数数量），训练用到的是 BPTT(backpropagation through time)。
 
-        一般用 BPTT 训练 RNN 模型时会因为梯度坍塌/爆炸而无法捕捉远距离依赖，而 LSTM 专治此不服。[Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) 是一篇不错的介绍文章，里面对 LSTM 有很生动的介绍。Andrej Karpathy 所写的 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) 更是值得一读。[RNN Tutorials 系列文章](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)也写的很好，建议一读。
+针对传统 RNN 的各种缺陷，有如下几种改进的 RNN 模型。
 
-        LSTM 目前已在诸多领域获得了成功，俨然已是最流行的 RNN 模型，[谷歌的邮件智能回复系统](http://googleresearch.blogspot.co.uk/2015/11/computer-respond-to-this-email.html)也采用了 LSTM.
+1. LSTM(long short term memory networks)
 
-    2. BirDirectional RNNs
+    一般用 BPTT 训练 RNN 模型时会因为梯度坍塌/爆炸而无法捕捉远距离依赖，而 LSTM 专治此不服。[Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) 是一篇不错的介绍文章，里面对 LSTM 有很生动的介绍。Andrej Karpathy 所写的 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) 更是值得一读。[RNN Tutorials 系列文章](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)也写的很好，建议一读。
 
-        核心想法：t时刻的输出不仅依赖于之前的序列，可能也要依赖于之后的序列
+    LSTM 目前已在诸多领域获得了成功，俨然已是最流行的 RNN 模型，[谷歌的邮件智能回复系统](http://googleresearch.blogspot.co.uk/2015/11/computer-respond-to-this-email.html)也采用了 LSTM.
 
-    3. GRU(gated recurrent units)
+2. BirDirectional RNNs
 
-        包含一个重置门，一个进化门。相比 LSTM 少了一个输出门。
+    核心想法：t时刻的输出不仅依赖于之前的序列，可能也要依赖于之后的序列
 
-        [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](http://arxiv.org/pdf/1412.3555v1.pdf), by Bengio 等人
+3. GRU(gated recurrent units)
 
+    包含一个重置门，一个进化门。相比 LSTM 少了一个输出门。
 
-
-
-- 递归神经网络(Recursive Neural Nwtwork)
+    [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](http://arxiv.org/pdf/1412.3555v1.pdf), by Bengio 等人
 
 
 
-- Memory Networks
 
-- RAM(Reasoning,Attention, Memory)
+##### Recursive Neural Nwtwork(递归神经网络)
+
+
+
+##### Memory Networks
+
+[End-to-End Memory Networks](http://arxiv.org/pdf/1503.08895v4.pdf)
+
+##### RAM(Reasoning,Attention, Memory)
 
 ### 论文
 - *[Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)*
@@ -71,6 +75,17 @@
     trick：输入序列逆序化能够将效果提升很多，作者认为这是他们论文最大的贡献之一。可能的解释是，反序之后，输入序列和输出序列的平均距离虽然没有变，但最小距离减小很多。
 
 
+
+
+[用深度卷积神经网络下围棋](http://jmlr.org/proceedings/papers/v37/clark15.pdf)
+
+
+##### 对抗网络(Adversarial Networks)
+
+multi-scale generation
+
 ### 学习资料
 
 1. [videolecture: 深度学习暑期学校](http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/),2015,蒙特利尔
+
+2. [Awesome Deep Vision](https://github.com/kjw0612/awesome-deep-vision)

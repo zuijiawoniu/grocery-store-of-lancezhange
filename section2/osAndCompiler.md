@@ -21,3 +21,7 @@
 包括 LRU, LFU, FIFO 等，注意区别LRU和LFU，前者是从频率上，后者是从时间上。
 
 
+### 资料
+
+[gitbook: linux insides](https://www.gitbook.com/book/0xax/linux-insides/details)
+[gitbook: 理解 linux 进程](http://www.linuxprocess.com/)

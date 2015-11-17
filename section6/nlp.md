@@ -2,6 +2,8 @@
 
 ### 顶会
 - ACL 计算机语言学协会
+
+    [ACL Anthology](http://aclweb.org/anthology/index.html)
 - NIPS
 - EMNLP(Conference on Empirical Methods in Natural Language Processing)
 
@@ -20,7 +22,13 @@ synset 同义词
 
 systactic parsing 句法分析
 
-基于 Attension 的网络模型
+
+- 对齐(alignment)
+
+    对齐，分段落、句子、短语、词语等不同级别
+
+    [词语对齐的对数线性模型](http://nlp.ict.ac.cn/~liuyang/papers/acl05_chn.pdf)
+
 
 ### 文本摘要
 
@@ -127,9 +135,19 @@ feature map
 
 
 
-Deep Learning 在语音和图像上都取得了极大的成功，但在NLP领域却还未能拳脚大开。
+Deep Learning 成功入侵了语音和视觉领域后，也终于在自然语言处理方面展现了自己的存在。
+
 
 [Deep Learning in NLP(-): 词向量和语言模型](http://licstar.net/archives/328)
+
+基于 *Attension* 的模型近年来也越来越受重视。Attension 大约在2014年的时候被引入计算机视觉领域，后来逐渐扩张到了NLP.(参见 [Survey on Attension-based Models Applied in NLP, 2015.10.07](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)）
+
+[Not All Contexts Are Created Equal: Better Word Representations with Variable Attention](http://www.cs.cmu.edu/~lingwang/papers/emnlp2015-2.pdf)
+
+##### 文本生成
+[Generating Text with RNN](http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
+
+
 
 ### 更多语料
 - [WordNet](http://wordnet.princeton.edu/)
@@ -162,6 +180,8 @@ Deep Learning 在语音和图像上都取得了极大的成功，但在NLP领域
 
     老师为斯坦福大学的 Dan Jurafsky 和 Christopher Manning
 - [Natural Language Understanding: FUndations and State-of-the-Art](http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pdf)
+    须深读之
+
 
     ICML 教程之一，待看
 - [Speech and Language Processing --- An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition](https://www.cs.colorado.edu/~martin/slp.html)

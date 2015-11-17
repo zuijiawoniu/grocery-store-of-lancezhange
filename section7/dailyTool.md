@@ -21,14 +21,6 @@
     - origami   多分屏
 
 
-### 可视化工具
-
-可视化是极端重要的！
-
-- D3.js
-- ggplot2
-    大神 Hadley 鼎鼎大名的R包
-- 
 
 ### Chrome 插件
 
@@ -47,6 +39,9 @@
 没有 google, 我真心活不下去----
 
 goagent 太折腾，曲径/红杏会挂，还是自己买个VPS用 shadow socks 搭建一个比较靠谱。
+
+也可以试试 SS-LINK
+
 
 ###  其他
 - git

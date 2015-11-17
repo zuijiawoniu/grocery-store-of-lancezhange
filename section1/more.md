@@ -39,3 +39,6 @@ AC 主要解决多模式串的匹配问题。
 
 [知其所以然之永不遗忘的算法](http://selfboot.cn/2015/11/03/howto_find_algorithm/)
 
+
+### 资源
+[gitbook: leetcode 题解](https://www.gitbook.com/book/siddontang/leetcode-solution/details)

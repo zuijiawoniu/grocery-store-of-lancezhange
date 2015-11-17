@@ -12,6 +12,9 @@
 ### http
 三次握手，四次挥手
 
+[HTTP2 讲解](https://www.gitbook.com/book/ye11ow/http2-explained/details)
+
+
 ### udp
 无状态
 

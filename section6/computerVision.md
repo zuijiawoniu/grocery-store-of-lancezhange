@@ -29,9 +29,20 @@
 ![图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html](../images/autostitch.png)
 
 
-#### 图片问题回答
 
-参见[问答系统专题](./qa.md)
+
+
+### 物体识别
+
+##### 人脸识别
+
+[Rapid object detection using a boosted cascade of simple features](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
+
+2001年 Paul Viola 和 Michael Jones 在CVPR上发表，文章中提出了三个要点：Haar-like 特征，AdaBoost 算法和 Cascade 结构，被称为 *Viola-Jones* 框架。
+
+
+
+[Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/)
 
 
 #### 图片描述(Image Caption)
@@ -46,21 +57,34 @@
 
      所谓的看图说话。
 
+- [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](http://arxiv.org/abs/1502.03044)
 
+
+
+#### 图片问题回答
+
+图片问题回答是自然语言处理和计算机视觉的交叉领域，参见[问答系统专题](./qa.md)
 
 ### 视频描述
-视频内容描述是图面内容描述的自然延伸，在视频搜索，人机交互，为盲人讲述内容等场景中均有切实的需求。
+视频内容描述是图面内容描述的自然延伸，在视频搜索，人机交互，为视力缺陷者讲述内容等场景中均有切实的需求。
 
-图片的内容描述，最后生成的句子的长度是不定长的，在视频描述中，多了一个不定长的变量：图片帧的个数。此外，现实视频中的物体繁多，场景多样，动作各异，这为视频内容描述带来了不小的困难。如何识别出最主要的内容也是难点，因为我们只想描述视频中最主要的部分，而不是面面俱到。
+图片的内容描述，最后生成的句子长度是不定长的，在视频描述中，多了一个不定长的变量：图片帧的个数。此外，现实视频中的物体繁多，场景多样，动作各异，这为视频内容描述带来了不小的困难。如何识别出最主要的内容也是难点，因为我们只想描述视频中最主要的部分，而不是面面俱到。
 
 LSTM 模型的成功。
 
-后来又加入了 attension, 
+后来又加入了 attension
 
-基准数据集
-1. MSVD(microsoft video description corpus)
-2. MPII-MD(MPII movie description dataset)
-3. M-VAD(montreal video annotation dataset)
+- [action recognition using visual attension](http://shikharsharma.com/projects/action-recognition-attention/)
+
+    基于 soft attension 模型的视频中动作识别。
+
+
+
+基准视频数据集
+1. MSVD (microsoft video description corpus)
+2. MPII-MD (MPII movie description dataset)
+3. M-VAD (montreal video annotation dataset)
+
 
 - [LSMDC 2015](https://sites.google.com/site/describingmovies/)
 
@@ -76,3 +100,10 @@ L2H 既然是从数据中学习，自然又可以被分为两种：有监督的�
 
     采用用深度学习方法同时学习特征和哈希编码。
 
+
+### 图片生成
+
+[Eyescream Project by Facebok](http://soumith.ch/eyescream/)
+
+### 资料
+1. [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
