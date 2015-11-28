@@ -69,6 +69,7 @@ freebase 已经被谷歌霍霍关闭了。
 
 - pVCR
 
+- [Ad Click Prediction: a View from the Trenches](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41159.pdf) by H. Brendan McMahan, et al., google, 2013
 
-
+    来自谷歌广告一线战壕的干货。FTRL-Proximal 在线学习算法
 

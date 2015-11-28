@@ -1,5 +1,8 @@
 # 语音识别专题
 
+语音识别的一个难点在于语音和文字的对齐。
+
+
 - [Speech Recognition with Deep RNNs](http://arxiv.org/pdf/1303.5778.pdf)
 
 - [Deep Speech: Scaling up end-to-end speech recognition](http://arxiv.org/abs/1412.5567)

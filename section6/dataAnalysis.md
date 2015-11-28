@@ -8,5 +8,5 @@
 
 我们知道，数据可视化对增进人们对数据的理解、捕捉数据中潜藏的模式，起着至关重要的作用，因此，掌握一些数据可视化的知识对数据分析从业者来说也是必要的。关于数据可视化，请参考[可视化专题](../section6/visualization.md)，这里不再赘述。
 
-
+[Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/)
 

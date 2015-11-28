@@ -1,9 +1,13 @@
 # shell
 
-指明执行该文件的程序
-   #！/bin/sh
+### shotcuts
+alt b(backward), alt f(forard), ctrl a, atrl e
 
-`>` 和 `>>` 的区别
+ctrl d, ctrl w, ctrl k, ctrl u
+
+alt tab, alt `, alt F4
+
+
 
 管道
 

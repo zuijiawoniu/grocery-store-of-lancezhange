@@ -11,7 +11,7 @@
 
     <img src="../images/cervical spondylosis.jpg" align="center">
 
-    那么，程序员如何预防颈椎病？答案是多喝水，你知道为什么吗？当然更靠谱的[保护自己的颈椎](http://www.zhihu.com/question/19562063)方法在这里。
+    那么，程序员如何预防颈椎病？答案是多喝水，你知道为什么吗？当然更靠谱的保护自己的颈椎方法[在这里](http://www.zhihu.com/question/19562063)。
 
 
 ##### 身心和谐

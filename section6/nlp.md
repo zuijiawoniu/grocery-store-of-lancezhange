@@ -1,4 +1,4 @@
-# 自然语言处理专题
+# 传统自然语言处理专题
 
 ### 顶会
 - ACL 计算机语言学协会
@@ -11,6 +11,8 @@
 
 
 
+[The Stanford Natural Language Processing Group](http://nlp.stanford.edu/)
+
 [Evaluation methods for unsupervised word embeddings]
 
 传统的自然语言处理方法是从语法，句法到语义的完整链条，每个步骤都需要人工设计特征，而深度学习则是‘端到端’的。
@@ -19,6 +21,7 @@
 
 
 synset 同义词
+hypernymy 上位词
 
 systactic parsing 句法分析
 
@@ -62,6 +65,33 @@ A Neural Attention Model for Abstractive Sentence Summarization
 
 ### 词性标注
 
+
+### 词嵌入(word embeding)
+- *[How to Generate a good Word Embeding?](http://arxiv.org/abs/1507.05523)*
+
+    作者本人还写了一篇[博客](http://licstar.net/archives/620)作为论文导读
+
+
+
+
+
+
+word2vec
+
+[GloVe](http://www-nlp.stanford.edu/projects/glove/glove.pdf)(GLobal Vector for word representation)
+
+[A GloVe implementation in python](http://www.foldl.me/2014/glove-python/)
+首先扫描预料，建立词语共生矩阵，后续就用该共生矩阵替代原预料。
+
+
+[Deep Learning in NLP(-): 词向量和语言模型](http://licstar.net/archives/328)
+
+[Not All Contexts Are Created Equal: Better Word Representations with Variable Attention](http://www.cs.cmu.edu/~lingwang/papers/emnlp2015-2.pdf)
+
+
+
+
+
 ### 命名实体识别(Named Entity Recognition)
 
 ### 情感分析
@@ -69,6 +99,7 @@ A Neural Attention Model for Abstractive Sentence Summarization
 ### 关系抽取
 
 
+Deep Learning 成功入侵了语音和视觉领域后，也终于在自然语言处理方面展现了自己的存在。
 
 ### 自然语言生成(NLG,natural Language Generation)
 
@@ -76,7 +107,15 @@ A Neural Attention Model for Abstractive Sentence Summarization
 在句子结构中分析实词和实词之间的语义关系，这种关系是一种事实上或逻辑上的关系，且只有当词语进入到句子时才会存在。语义依存分析的目的即回答句子的”Who did what to whom when and where”的问题。
 ![依存分析](http://mmbiz.qpic.cn/mmbiz/58FUuNaBUjrhHeeViaJ7BibPxDSDlRcI4ZqlIxhFKU7m81PcdVM2LsExgCRzbgTtEhsEJVttdWyc3hALp1ctU6kg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1">)
 
+
 ### 机器翻译(MT, Machine Translation)
+本文介绍机器翻译。
+
+
+- *[Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)*
+
+    Google 出品.传统的DNN需要的输入和输出都是固定维度的，但在机器翻译这种情景中，输入和输出都是序列(sequence, 不定长)，因此提出了一个通用的序列到序列的方法，直接粗暴。具体地，用多层LSTM将序列映射到一个定长向量，然后用另外一个深层LSTM将该向量解码为序列，好比请了两个翻译。其实请翻译的做法之前就已经有人做了，只不过这里作者请的翻译是RNN的一个变种，即LSTM. 而之所以请LSTM做翻译，是因为LSTM比较擅长处理长距离的时序依赖（体现在句子中就是长距离的单词之间的语义依赖），使得在语言翻译问题中能够得到好的效果。  
+    trick：输入序列逆序化能够将效果提升很多，作者认为这是他们论文最大的贡献之一。可能的解释是，反序之后，输入序列和输出序列的平均距离虽然没有变，但最小距离减小很多。
 
 
 - PBMT(phrase based machine translation)
@@ -128,28 +167,17 @@ feature map
 
     2015.10. 基于 (video, sentence) pair 训练出 LSTM 模型，称为 S2VT，video 包括像素值和相邻帧的光流。
 
-### 词嵌入(word embeding)
-- *[How to Generate a good Word Embeding?](http://arxiv.org/abs/1507.05523)*
-
-    作者本人还写了一篇[博客](http://licstar.net/archives/620)作为论文导读
 
 
+---
 
-Deep Learning 成功入侵了语音和视觉领域后，也终于在自然语言处理方面展现了自己的存在。
-
-
-[Deep Learning in NLP(-): 词向量和语言模型](http://licstar.net/archives/328)
-
-基于 *Attension* 的模型近年来也越来越受重视。Attension 大约在2014年的时候被引入计算机视觉领域，后来逐渐扩张到了NLP.(参见 [Survey on Attension-based Models Applied in NLP, 2015.10.07](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)）
-
-[Not All Contexts Are Created Equal: Better Word Representations with Variable Attention](http://www.cs.cmu.edu/~lingwang/papers/emnlp2015-2.pdf)
 
 ##### 文本生成
 [Generating Text with RNN](http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
 
 
 
-### 更多语料
+### 语料
 - [WordNet](http://wordnet.princeton.edu/)
 
     普林斯顿大学的科研人员设计的一个基于认知语言学的英语字典，它将单词按照意义组合成不同的同义词集合，并记录了这些集合之间的层次关系。
@@ -163,6 +191,10 @@ Deep Learning 成功入侵了语音和视觉领域后，也终于在自然语言
     伯克利出品。按照情景(frame)组织，每种情景由其触发词汇。缺点：frame那么多，我们永远也弄不全的！
 
 
+
+
+---
+
 ### 常用工具
 
 - [NLTK]()
@@ -174,7 +206,12 @@ Deep Learning 成功入侵了语音和视觉领域后，也终于在自然语言
 
     还有[python接口](https://github.com/dasmith/stanford-corenlp-python)
 
-#### 学习资料
+
+
+
+---
+
+### 学习资料
 
 - [coursera课程： 自然语言处理](https://class.coursera.org/nlp/lecture)
 

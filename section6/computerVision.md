@@ -1,40 +1,30 @@
-# 计算机视觉专题
+# 传统计算机视觉专题
 
-机器视觉领域的顶会
-- CVPR 国际计算机视觉和模式识别会议
-- ICCV 国际计算机视觉大会
-- ECCV 欧洲计算机视觉大会
+### 总论
+计算机视觉和自然语言处理这两个领域的发展和命运是很相似的：它们在发展过程中都积累了诸多传统方法，但随着深度学习的崛起，传统方法逐渐失去往日的光辉而显得没落，大地上留下的似乎只剩下深度学习那模糊但强壮的身影。
 
-传统的机器视觉抽取的特征有
-- FAST 角点
-- Harris 角点
+由于本书单有一章讲深度学习，所以在计算机视觉专题中，我们只讲那些传统的方法，而把深度学习相关的视觉方法放到深度学习那一章去，自然语言处理那里同样如此。
 
-#### 视觉测距
-参考 [VO from Scratch - a tutorial for beginners](http://avisingh599.github.io/vision/visual-odometry-full/)，写的很清晰
+传统的图像处理方法依赖于图片的像素矩阵表示，有了矩阵之后，能做的事情就非常多了，例如二值化，阈值化，色彩均化，滤波（模糊/光滑），形态学开集和闭集，以及联通区域划分，图像金字塔等。这些处理方法在实际当中应用广泛，例如许多图片应用的滤镜/增强/变形效果,以及图片压缩。
 
+上面这些只是针对单张图片的操作，随着照相技术的发展，图片越来越多，因此有了图片的分类以及基于内容的检索等实际的需求。传统机器视觉的方法或者说套路是，先针对问题和对特征的具体要求（例如希望特征具有旋转不变性等）设计一些特征抽取方法，有了特征之后，就能拿去喂给一些机器学习算法去做分类等进行后续的工作了。所以重点集中在了特征的设计这里。简单的特征，如颜色直方图，只是一个简单的统计描述，而其他常用的特征，如 Harris 角点，FAST 角点，图像梯度以及HOG, LBP(local binary pattern), SIFT 特征以及其变体 SUFT 和 ORB, haar 等，则经过了精心的设计，并且涉及一些诸如利用积分图像来优化计算的技巧，是传统计算机视觉的重要成果。
 
-- 单目视觉测距(Monocular Visual Odometry)
-
-    单个摄像头
-    - [MVO using OpenCV](http://avisingh599.github.io/vision/monocular-vo/)
-- 立体视觉测距(Stereo Visual Odometry)
-    多个摄像头
-
-
-
-#### 图片拼接(Image Stitching)
-
-- 随机抽样一致算法(RANSAC)
+有了特征之后，能够解决的问题包括边缘检测/轮廓提取，图像分割，图片分类，人脸识别，图片拼接(image stitching)，视觉测距（包括单目视觉测距(Monocular Visual Odometry)和立体视觉测距(Stereo Visual Odometry)）等。
 
 ![图片拼接 来源 http://matthewalunbrown.com/autostitch/autostitch.html](../images/autostitch.png)
 
+后来视频数据也多了起来。视频无非是一些连续的图片，因此图片处理技术很自然地被扩展到了视频处理上。当然，视频的动态特征也得到了特殊的对待，于是有了均值漂移、GMM（混合高斯模型）等背景建模的方法，以及利用光流法等实现物体的跟踪。
+
+这之后，随着人工智能技术的崛起，深度学习大潮席卷了包括计算机视觉和自然语言处理在内的诸多领域，许多在之前无法有效解决的问题，比如图片语义分割、图片/视频内容描述、图片/视频问答等开始得到解决，许多新的问题，如图片自动生成、图片风格迁移等开始出现，并在深度学习的火炬下显示出无限可能，而传统的方法，那些人工设计特征的时代，似乎正在渐行渐远。
 
 
 
+### Saliency
+[MIT Saliency Benchmark](http://saliency.mit.edu/datasets.html)
 
-### 物体识别
 
-##### 人脸识别
+
+### 人脸识别
 
 [Rapid object detection using a boosted cascade of simple features](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
 
@@ -45,50 +35,10 @@
 [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/)
 
 
-#### 图片描述(Image Caption)
-
-图片描述是较难的，因为要对场景做准确的理解
-
-- [MS COCO Captioning Challenge](http://mscoco.org/dataset/#captions-challenge2015)
-
-    比赛于2015年4月开始，5月结束（但测评服务目前仍然开放），7月份在 CVPR 2015 Large-scale Scene Understanding workshop 宣布结果。采用人工裁判，排在第一的还是人，后面两名则分别来自谷歌和微软（打了个平手）。
-
-- [Neural Storyteller](https://github.com/ryankiros/neural-storyteller)
-
-     所谓的看图说话。
-
-- [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](http://arxiv.org/abs/1502.03044)
+HMAX(Hierarchical Model and X)
 
 
 
-#### 图片问题回答
-
-图片问题回答是自然语言处理和计算机视觉的交叉领域，参见[问答系统专题](./qa.md)
-
-### 视频描述
-视频内容描述是图面内容描述的自然延伸，在视频搜索，人机交互，为视力缺陷者讲述内容等场景中均有切实的需求。
-
-图片的内容描述，最后生成的句子长度是不定长的，在视频描述中，多了一个不定长的变量：图片帧的个数。此外，现实视频中的物体繁多，场景多样，动作各异，这为视频内容描述带来了不小的困难。如何识别出最主要的内容也是难点，因为我们只想描述视频中最主要的部分，而不是面面俱到。
-
-LSTM 模型的成功。
-
-后来又加入了 attension
-
-- [action recognition using visual attension](http://shikharsharma.com/projects/action-recognition-attention/)
-
-    基于 soft attension 模型的视频中动作识别。
-
-
-
-基准视频数据集
-1. MSVD (microsoft video description corpus)
-2. MPII-MD (MPII movie description dataset)
-3. M-VAD (montreal video annotation dataset)
-
-
-- [LSMDC 2015](https://sites.google.com/site/describingmovies/)
-
-    The Large Scale MOvie Description Challenge, at ICCV 2015.
 
 ### 图片检索
 
@@ -101,9 +51,18 @@ L2H 既然是从数据中学习，自然又可以被分为两种：有监督的�
     采用用深度学习方法同时学习特征和哈希编码。
 
 
-### 图片生成
 
-[Eyescream Project by Facebok](http://soumith.ch/eyescream/)
+hyperlapse
+延时视频
+
+基于内容他的图片搜索(CBIR, content based image retrieval)传统上采用的都是特征匹配的方法，后来有了CNN之后，人们将网络的中间隐层激活子作为特征，结合最大池池化(max-pooling) 操作，也取得了不错的效果。
+
+[particular object retrieval with integral
+max-pooling of cnn activations, by Giorgos Tolias, et al., ICLR 2016, under review](http://arxiv.org/pdf/1511.05879v1.pdf)
+
 
 ### 资料
 1. [Awesome Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
+
+本文参考
+[面向机器视觉的深度学习资源汇总](http://www.open-open.com/lib/view/open1435818441450.html)

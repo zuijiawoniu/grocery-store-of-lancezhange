@@ -9,6 +9,9 @@
 
 
 
+
+
+
 ### 时间管理
 
 ### 情绪管理
@@ -27,6 +30,13 @@
     - [Quotes of the Day](http://www.quotationspage.com/qotd.html)
 
     每天看几则名言
+
+### 投资理财
+
+
+### 项目/团队管理
+
+进度、成本、质量
 
 
 

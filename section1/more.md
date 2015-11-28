@@ -42,3 +42,8 @@ AC 主要解决多模式串的匹配问题。
 
 ### 资源
 [gitbook: leetcode 题解](https://www.gitbook.com/book/siddontang/leetcode-solution/details)
+
+- [Craking the Code Interview 问题与解答](http://www.hawstein.com/posts/ctci-solutions-contents.html)
+
+    《Cracking the coding interview》是一本被许多人极力推荐的程序员面试书籍， 详情可见：http://www.careercup.com/book。 里面有150道程序员面试题目及相应的解答。书中大部分是编程题目， 并且配有相应的java程序(有些地方有错误或是有更优的方案)。Hawstein 把书中的题目做了一遍， 并且记录下来，包含他对问题的一些思路及看法，许多问题给出了两种以上的解答方案。 所有的代码都托管在Github上。
+

@@ -40,11 +40,7 @@
 - AUC
     - AUC 的计算技巧：利用其与 wilcoxon-mann-witney test 的等价性，求出正样本的 score > 负样本的 score 的pair数，但还是复杂。进一步的改进方法：首先对 score 从大到小排序。
 
-#### 对抗样本
-
-*对抗样本*是将实际样本略加扰动而构造出的合成样本，对该样本，分类器非常容易将其类别判错。垃圾邮件发送者可能利用对抗样本来骗过垃圾邮件识别系统。对抗样本对深度模型的影响要比对浅层模型的影响更大，因此一些人认为深度学习不是**deep learning**, 而是**deep flaw**，参见[深度学习对抗样本的八个误解与事实](http://m.csdn.net/article_pt.html?arcid=2825248)
-
-论文 [Exploring the Space of Adversarial Images(ICLR 2016, under review)](http://arxiv.org/abs/1510.05328)
-(代码在[这里](https://github.com/tabacof/adversarial)) 显示，对抗图片在像素空间中绝非孤立点，而是占据了很大一部分空间！
-
-由此，有了*对抗训练(adversarial training)* 的概念。通过对抗训练，可以提高模型的鲁棒性，相当于加上了一种形式的正则。
+机器视觉领域的顶会
+- CVPR 国际计算机视觉和模式识别会议
+- ICCV 国际计算机视觉大会
+- ECCV 欧洲计算机视觉大会

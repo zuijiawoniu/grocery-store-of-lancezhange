@@ -8,11 +8,41 @@
 
 Spark 被认为是 ***smartphone of data***
 
+##### 基础
+job stage task
+
+DAGScheduler *作业调度*模块, 基于Stage的高层调度模块，它为每个Spark Job 计算具有依赖关系的多个 Stage 任务阶段（通常根据 Shuffle 来划分 Stage，如 groupByKey, reduceByKey 等涉及到shuffle的变换就会产生新的stage），然后将每个 Stage 划分为具体的一组任务，以 TaskSets 的形式提交给底层的 *任务调度* 模块 TaskScheduler 来具体执行
+
+TaskScheduler 本身是由 SchedulerBackend 来调度和管理的。
+
+执行步骤
+0. 根据 SparkConf 进行一系列的初始化
+1. SparkContext 创建 DAG Scheduler 和 TaskScheduler
+2. TaskScheduler 通过 SchedulerBackend 创建 AppClient
+3. AppClient 向 Master 提交 Application
+4. Master 根据 AppClient 的提交选择 Worker
+5. Worker 根据 Master 的资源分配结果来创建 Executor
+
+
+
+[spark 中的编程模型](http://blog.csdn.net/liuwenbo0920/（）article/details/45243775)
+
+
+##### 性能调优
+
+spark.executor.memory
+
+
 不用 `readuceByKey`
 
 `spark.driver.maxResultSize`
 
 `spark.akka.frameSize`
+
+
+
+###### 高级开发
+[Sparknet: training deep networks in spark, by Philipp Moritz, et al., berkeley](http://arxiv.org/pdf/1511.06051v1.pdf)
 
 [gitbook: Spark 开发指南](https://www.gitbook.com/book/taoistwar/spark-developer-guide/details)
 
@@ -49,7 +79,7 @@ Spark 被认为是 ***smartphone of data***
 
 第一代是 DistBelief, 其可扩展性较好，但灵活性不足
 
-然而 TF 一出，对其[性能的评测结果](https://github.com/soumith/convnet-benchmarks/issues/66)却并不理想，一时间舆论大哗。
+然而 TF 一出，对其[性能的评测结果](https://github.com/soumith/convnet-benchmarks/issues/66)却并不理想，被戏称为 *TensorSlow*，一时间舆论大哗。
 
 
 
@@ -69,6 +99,6 @@ DMLC 出品。CXXNet 的进化版，支持 python, R, Go, Julia 等多种语言�
 4. 
 
 ### [SystemML](http://systemml.apache.org/)
-Apache SystemML，分布式、命令式机器学习平台，目前仍然处于孵化阶段
+Apache SystemML，IBM 开源的分布式、命令式机器学习平台，目前仍然处于孵化阶段
 
 

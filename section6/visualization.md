@@ -64,6 +64,11 @@
 
     他们又搞个[TimelineJS3](https://github.com/NUKnightLab/TimelineJS3)出来
 
+- [Plotly.js](https://plot.ly/javascript/open-source-announcement/)
+
+    2015.11 开源。基于 D3.js 和 [stack.gl](http://stack.gl/)，绝对利器。
+
+
 
 ### 作品廊
 
