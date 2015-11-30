@@ -21,7 +21,7 @@
 
 
 synset 同义词
-hypernymy 上位词
+hypernymy 上位词，例如 person 是 woman 的上位词.
 
 systactic parsing 句法分析
 
@@ -73,6 +73,10 @@ A Neural Attention Model for Abstractive Sentence Summarization
 
 
 
+
+##### Recognise Textual Entailment 文本蕴含关系识别
+
+所谓文本蕴含关系，就是蕴含关系在文本中的体现，比如‘我因为喜欢读书所以去上了大学’就蕴含‘’我喜欢读书，也蕴含‘我上过大学’，但并不蕴含‘我上过火星’。
 
 
 
@@ -146,6 +150,9 @@ syntagmatic relation
 
 [Learning Word Representations by Jointly Modeling Syntagmatic and Paradigmatic Relations ]()
 
+- [Word Representations via Gaussian Embedding by by Luke Vilnis, et al., 2014](http://arxiv.org/abs/1412.6623)
+
+
 RNTN（Recursive Neural Tensor Networks）
 递归神经张量网络
 
@@ -156,6 +163,15 @@ feature map
 - LDA
 
 多模态 - 将文本与图像/音频/视频等结合
+
+- [Order-Embeddings of Images and Language by Ivan Vendrov, et al., 2015, ICLR 2016, under review](http://arxiv.org/abs/1511.06361)
+
+    图片和语言的有序嵌入. 上位词、文本蕴含、图片描述，其实都可以视为在建模层次结构。该层次结构又有明显的偏序结构，可以用 *偏序表示* 来刻画，本文提出了一种获得偏序表示的方法。
+
+    偏序结构并不具有对称性，所以作者认为嵌入空间中使用对称的相似距离测度（例如欧几里得距离）会带来系统性误差。
+
+    一般嵌入的时候，都要求嵌入映射是保距的，因为我们希望原空间中相似的物体在嵌入空间中也相似，但作者认为，在建模偏序结构时，*与其保距，不如保序*。
+
 
 
 

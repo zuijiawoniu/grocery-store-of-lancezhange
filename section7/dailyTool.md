@@ -3,6 +3,7 @@
 ### 编辑器相关
 
 - sublime text2/3
+
     就算不是下雨天，sublime 和如下插件更配哦
     - package control 包管理，首要插件
     - keymaps   展现你所有的 keymap, 方便管理和查询快捷键，真心牛逼
@@ -47,9 +48,16 @@
 
     ctrl pagedown/pageup : 切换tab
 
+    Ctrl G: go to
+
+    Ctrl R: reach
+
+
     ctrl d: 选择单词, 连续多选，ctrl k 放弃当前选择（跳过）
 
     ctrl kk
+
+    ctrl k b
 
     ctrl ku, ctrl kl
 
@@ -59,13 +67,17 @@
 
     shift 大写
 
+    ctrl enter: 行后插入
+
     ctrl shift enter 当前行之前一行插入
+
+    ctrl shift d: 复制整行
 
 - sublime 更多使用
 
     1. 可以自定义一些 snippets, 用 ctrl shift p 就能检索，充分利用 sublime 的扩展能力
     2. project
-    3. 开启 Vim 模式， 编辑的时候仍然使用 sublime 的快捷键，nice.
+    3. 开启 Vim 模式
     
 
 

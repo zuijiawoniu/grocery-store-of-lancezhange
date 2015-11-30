@@ -68,6 +68,9 @@
 
     2015.11 开源。基于 D3.js 和 [stack.gl](http://stack.gl/)，绝对利器。
 
+- Gephi
+
+
 
 
 ### 作品廊
@@ -80,6 +83,7 @@
 
 [概念可视化集锦(Gallery of Concept visualization.md )](http://conceptviz.github.io/#/e30=)
 
+[Information Is Beautiful Awards](http://www.informationisbeautifulawards.com/)
 
 ### 资料
 [gitbook: Data Visualization for All](http://www.datavizbook.org/content/)

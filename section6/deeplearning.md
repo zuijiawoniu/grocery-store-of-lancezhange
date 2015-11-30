@@ -287,10 +287,7 @@ Contexts by Qiang LIu, et al., 中科院](http://www.shuwu.name/sw/Predicting%20
 
 
 
-- [Order-Embeddings of Images and Language by Ivan Vendrov, et al., 2015](http://arxiv.org/abs/1511.06361)
 
-    图片和语言的有序嵌入. 上位词、文本继承、图片描述，其实都可以视为在建模层次结构。该层次结构又有明显的偏序结构，可以用 *偏序表示* 来刻画，本文提出了一种获得偏序表示的方法。
 
-    
 
 

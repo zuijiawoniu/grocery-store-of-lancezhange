@@ -51,9 +51,15 @@ static 关键字的作用：隐藏，持久化，初始化为0
 
 有些编译器即使不加 `inline` 关键字，也可能会对短小的函数做内联优化
 
+### 模板元编程
+
+
 
 ## 魔鬼在细节之中
 - 赋值表达式的返回值即所赋值本身
 
 ### 并行编程
 [gitbook: C++ 并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details)
+
+### 参考资料
+[Awesome Cpp](https://github.com/fffaraz/awesome-cpp)
