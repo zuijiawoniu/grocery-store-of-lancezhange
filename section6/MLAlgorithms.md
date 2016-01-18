@@ -1,5 +1,8 @@
 # 常用算法总览
 
+>One good thing about doing machine learning at present is that people actually use it!
+
+
 
 - 逻辑回归
    损失函数为交叉熵
@@ -15,46 +18,59 @@
     [The Singular Value Decomposition, Applications and Beyond](http://arxiv.org/pdf/1510.08532.pdf)
 - 决策树
 - CART
+
+- 随机森林
+
+    [Awesome Random Forest](http://jiwonkim.org/awesome-random-forest/)
+
 - 感知机
 - 支持向量机
-- Boost
-    - AdaBoost
-    - GradientBoost
 
 - 朴素贝叶斯
 - 极大后验概率(MAP)
 - 贝叶斯估计
      - 和 MAP 的最大区别：MAP 假设参数是固定值，而贝叶斯估计假设未知参数也是随机变量。
+
+
 - 隐马尔科夫
     模型 model = (初始状态, 转移矩阵, 观测概率)
 
     - 学习问题：已知观测，估计模型，采用 EM 算法
     - 概率计算：在已知模型下得到特定观测的概率，采用前向/后向算法
     - 解码问题：已知模型和观测序列，求最大可能的状态序列，采用维特比算法
-- 概率潜在语义分析(pLSA)
-- LDA
 
 
-
-- sequence-to-sequence learning
-- 
 
 - 概率图模型
 - 条件随机场
 
 
 
+---
 
-- 变分推断(variational Inference)
+### 集成方法(Ensembling)专题
 
-    - [Variational Inference for Machine Learning](http://shakirm.com/papers/VITutorial.pdf)
+集成方法现在真是火的不要不要的。
+参考　[Kaggle Ensembling Guide](http://mlwave.com/kaggle-ensembling-guide/) 一文
 
-        出自 Shakir Mohamed from Google DeepMind. 
+- AdaBoost
+- GradientBoost
+
+
 
 
 ---
 
-- Semi-supervised Learning 半监督学习
+### 变分推断(variational Inference)
+
+- [Variational Inference for Machine Learning](http://shakirm.com/papers/VITutorial.pdf)
+
+    出自 Shakir Mohamed from Google DeepMind.
+
+
+---
+
+### Semi-supervised Learning 半监督学习
 
 针对只有极少部分数据有标记而大量数据无标记的情形
 参考 [半监督学习](http://www.cnblogs.com/liqizhou/archive/2012/05/11/2496155.html)
@@ -77,19 +93,42 @@ active learning 主动学习
 
 ---
 
-- 强化学习(reinforcement learning)
+### 强化学习(reinforcement learning)
 
-   又称为增强学习。策略梯度(policy gradient)是强化学习中重要的方法
+又称为增强学习。策略梯度(policy gradient)是强化学习中重要的方法
+
+- [Policy Gradient Methods](http://www.scholarpedia.org/article/Policy_gradient_methods)
 
 
 
+
+---
+
+### 排序学习(Learning to Rank)
+
+[Learning to Rank using Gradient Descent](http://icml.cc/2015/wp-content/uploads/2015/06/icml_ranking.pdf)
+
+
+
+
+
+
+---
 
 ### 机器学习不是万能的
 
 机器学习并不是万能的。
 
-[Machine Learning: The High-Interest Credit Card of Technical Debt](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf) by D. Sculley, et al.
+- [Machine Learning: The High-Interest Credit Card of Technical Debt](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf) by D. Sculley, et al.
 
+
+- [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) by D. Sculley, et al., Google
+
+    机器学习系统中隐藏的技术债。* Not all debt is bad, but all debt needs to be serviced*．　这些技术债包括：复杂的模型可能会悄然改变抽象边界，CACE(change anything changes everything)，数据依赖等
+
+
+
+---
 
 ### 资料
 [机器学习](http://wenku.baidu.com/course/view/49e8b8f67c1cfad6195fa705?fr=search) by 余凯、张潼

@@ -13,5 +13,8 @@
 
     GoF（“四人帮”，又称Gang of Four，即Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides四人）编写的
 
+
+- [关于23种设计模式的有趣见解](http://www.kuqin.com/shuoit/20150420/345785.html)
+
 - [python patterns(A collection of design patterns and idioms in Python) ](https://github.com/faif/python-patterns)
 - [小明明'github设计模式系列博文](http://dongweiming.github.io/category/she-ji-mo-shi.html)

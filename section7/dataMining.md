@@ -8,15 +8,29 @@
 
 Spark 被认为是 ***smartphone of data***
 
+- MLlib
+- GraphX
+- Spark SQL
+- Spark Streaming
+
+其他基于　spark 的第三方库
+
+- [spark-ts](https://github.com/cloudera/spark-timeseries)
+
+
+### Flink
+
+### Hadoop
+
 ### Scikit-Learn
 
 ### H2O
 
+神说，有了火(spark)，当然也要有水，于是 H2O 横空出世。
+
 ### Weka
 
 ### Vompal Wabbit
-
-### Hadoop
 
 ### caffe
 
@@ -53,8 +67,10 @@ DMLC 出品。CXXNet 的进化版，支持 python, R, Go, Julia 等多种语言�
 
 3. 利用参数服务器，容易分布式扩展
 
+参见　[MXNet 设计和实现简洁]，by 李沐, et al.
 
 ### [SystemML](http://systemml.apache.org/)
 Apache SystemML，IBM 开源的分布式、命令式机器学习平台，目前仍然处于孵化阶段
 
 
+### [MicroSoft Azure](https://login.microsoftonline.com/common/oauth2/authorize?api-version=1.0&client_id=0736f41a-0425-4b46-bdb5-1563eff02385&response_type=id_token&scope=openid&redirect_uri=https://login.azureml.net/response.aspx&response_mode=form_post&state=4dabebe2f8bd438d99a6b735b405fb1a&nonce=635846325692222953.ZWQ5MmM1OTYtYTNmMS00NGIxLThjYjctMDJlOTRjMDM5NDI3NTkwM2MyNzctNjEzYS00MzVmLTk3NmItOWU3NDNhZGMzMjA2)

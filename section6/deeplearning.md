@@ -11,9 +11,11 @@
 - 百度IDL
 
 
+---
+
 ### 深度学习(deep learning)通用理论基础
 
-深度学习的核心在于学习多层次的表示（distributed representations，对应不同程度的抽象），从而实现 data -> information -> knowledge ->  wisdom.
+深度学习的核心在于学习多层次的表示（distributed representations，对应不同程度的抽象），从而实现DIKW金字塔(data -> information -> knowledge ->  wisdom).
 
 
 - [Representation Learning: A Review and New Perspectives by Yoshua Bengio, et al., 2012](http://arxiv.org/abs/1206.5538)
@@ -39,46 +41,49 @@ Enery-based Models  分为有潜变量和无潜变量的情形；极大似然方
 
 
 
-深度学习的主要应用我们分专题讲述，以下是一些其他应用
-
-- [Predicting online user behaviour using deep learning algorithms by Armando Vieira](http://arxiv.org/abs/1511.06247v1)
-
-- [Using Neural Networks for Click Prediction of Sponsored Search](http://arxiv.org/abs/1412.6601)
-
-
-- [Neural Turing Machines](http://arxiv.org/abs/1410.5401)
-
-    代码[在此](https://github.com/shawntan/neural-turing-machines)
-
-- [Reinforcement Learning Neural Turing Machine](http://arxiv.org/abs/1505.00521)
-
 
 
 ---
 
-###  CNN(卷积神经网络)
+###  CNN(卷积神经网络)专题
 
-CNN 已经有了诸多成熟的架构。比如， googleNet, LeNet, 
-- VGG architecture
+CNN 已经有了诸多成熟的架构
+
+- LeNet
+- AlexNet
+- googleNet
+
+    [Going deeper with convolutions](http://arxiv.org/pdf/1409.4842.pdf)
 
 
-[用深度卷积神经网络下围棋](http://jmlr.org/proceedings/papers/v37/clark15.pdf)
-这背后用到的原理阐述。
+- VGG-Net
+
+　[very deep convolutional networks for large-scale image recognition](http://arxiv.org/pdf/1409.1556.pdf)
 
 
+- OverFeat
 
+    [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](http://arxiv.org/pdf/1312.6229.pdf)
+
+- R-CNN
+
+    [R-CNN: Regions with Convolutional Neural Network Features](https://github.com/rbgirshick/rcnn)
+
+
+- ShCNN
+
+    [Shepard Convolutional Neural Networks by Jimmy SJ. Ren, et al., NIPS 2015](https://papers.nips.cc/paper/5774-shepard-convolutional-neural-networks.pdf)
+
+    SenseTime(商汤科技，一家专注于计算机视觉和深度学习原创技术的中国公司)研究人员出品，[代码在此](https://github.com/jimmy-ren/vcnn_double-bladed/tree/master/applications/Shepard_CNN)。可用在超分辨率重建，图像修补等。
 
 
 ---
 
-#### RNN（recurrent neural networks, 循环神经网络）
+### RNN（recurrent neural networks, 循环神经网络）专题
 
-本文是一些关于 RNN 的东西。
-RNN 是 Recursive Neural Nwtwork(递归神经网络，有时也被简写为 RNN) 的一种
+本文是一些关于 RNN 的东西，更多资料参见[Awesome RNN](http://jiwonkim.org/awesome-rnn/)
 
-[Awesome RNN](http://jiwonkim.org/awesome-rnn/)
-
-RNN 的核心在于对当前的状态保留`记忆`（以隐变量的方式存在）。
+RNN 是 Recursive Neural Nwtwork(递归神经网络，有时也被简写为 RNN) 的一种，其核心在于对当前的状态保留`记忆`（以隐变量的方式存在）。
 
 给定输入序列 $$(x_1,x_2, ..., x_T)$$, 一个标准的RNN通过如下迭代方程计算输出序列$$(y_1,y_2, ..., y_T)$$:
 
@@ -116,63 +121,97 @@ $$
 
     探讨 RNN 的内在机理。非常重要的一篇，待认真研读。
 
+- [A Critical Review of Recurrent Neural Networks for Sequence Learning](http://arxiv.org/abs/1506.00019v1)
+
 - [Scheduled Sampling for Sequence Prediction with
 Recurrent Neural Networks](http://arxiv.org/pdf/1506.03099v3.pdf) by Sami Bengio, et al., at Google.
 
     定时采样
 
 
+[recurrent.js](https://github.com/karpathy/recurrentjs) Karpathy 大神用　javascript 写的RNN库
 
-Multimodal RNN
 
-一些应用（不包括机器翻译等独立专题部分）
+更多请参考　[Awesome RNN](http://jiwonkim.org/awesome-rnn/)
+
+
+
+---
+
+### 神经变分推断(neural variational inference)
+
+
+
+
+
+---
+### 深度隐变量模型(deep latent variabl models)
+
+[Neural Variational Inference for Text Processing, by Yishu Miao, et al., Oxford, ICLR 2016, under review](http://arxiv.org/pdf/1511.06038v1.pdf)
+
+
+---
+
+### RNTN（Recursive Neural Tensor Networks）递归神经张量网络
+
+---
+
+### Memory Networks
+
+[End-to-End Memory Networks by Sainbayar Sukhbaatar, et al., 2015](http://arxiv.org/pdf/1503.08895v4.pdf)
+
+
+
+- [Memory-based Bayesian Reasoning with Deeep Learning](http://blog.shakirm.com/wp-content/uploads/2015/11/CSML_BayesDeep.pdf)
+
+    to read
+
+- [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing](http://arxiv.org/pdf/1506.07285v1.pdf)
+
+
+
+
+
+---
+
+### 深度学习的多种应用
+
+深度学习的主要应用我们分专题讲述，以下是一些未分类的其他应用
+
+- [Predicting online user behaviour using deep learning algorithms by Armando Vieira](http://arxiv.org/abs/1511.06247v1)
+
+    预测在线用户行为
+
+- [Using Neural Networks for Click Prediction of Sponsored Search](http://arxiv.org/abs/1412.6601)
+
+　　点击率预测
+
+- [Convolutional Neural Networks for Pedestrian Detection](https://github.com/DenisTome/DeepPed)
+
+    行人检测
+
+- [Neural Turing Machines](http://arxiv.org/abs/1410.5401)
+
+    代码[在此](https://github.com/shawntan/neural-turing-machines)
+
+- [Reinforcement Learning Neural Turing Machine](http://arxiv.org/abs/1505.00521)
+
+
+- [Neural-Colorizer](https://github.com/YerevaNN/neural-colorizer)
+
+　　利用卷积自编码为灰度图着色
+
+- [用深度卷积神经网络下围棋](http://jmlr.org/proceedings/papers/v37/clark15.pdf)
+这背后用到的原理阐述。
 
 - [Neural Programmer-Interpreters by Scott Reed, et al., ICLR 2016, submitted](http://arxiv.org/abs/1511.06279)
 
     利用深度学习运行计算机程序，这听起来是如此虚幻。
 
-- [A Neural Algorithm for Artistic Style by Leon A. Gatys, et al., 2015](http://arxiv.org/abs/1508.06576)
 
-    
+- [opinion mining with deep recurrent nets](http://www.cs.cornell.edu/~oirsoy/drnt.htm)
 
-
-其他如 Memory Networks
-
-[End-to-End Memory Networks](http://arxiv.org/pdf/1503.08895v4.pdf)
-
-RAM(Reasoning,Attention, Memory)
-
-- [Memory-based Baysian Reasoning with Deeep Learning](http://blog.shakirm.com/wp-content/uploads/2015/11/CSML_BayesDeep.pdf)
-
-    to read
-
-
-
-
-
-
-### 机器翻译(MT, Machine Translation)
-本文介绍机器翻译。
-
-NMT(Neural Machine Translation)
-
-- *[Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)*
-
-    Google 出品.传统的DNN需要的输入和输出都是固定维度的，但在机器翻译这种情景中，输入和输出都是序列(sequence, 不定长)，因此提出了一个通用的序列到序列的方法，直接粗暴。具体地，用多层LSTM将序列映射到一个定长向量，然后用另外一个深层LSTM将该向量解码为序列，好比请了两个翻译。其实请翻译的做法之前就已经有人做了，只不过这里作者请的翻译是RNN的一个变种，即LSTM. 而之所以请LSTM做翻译，是因为LSTM比较擅长处理长距离的时序依赖（体现在句子中就是长距离的单词之间的语义依赖），使得在语言翻译问题中能够得到好的效果。  
-    trick：输入序列逆序化能够将效果提升很多，作者认为这是他们论文最大的贡献之一。可能的解释是，反序之后，输入序列和输出序列的平均距离虽然没有变，但最小距离减小很多。
-
-
-- PBMT(phrase based machine translation)
-
-- 统计机器翻译(SMT, statistical machine translation)
-
-    包括基于单词，基于短语，基于形态分析（词形变化），基于句法（不再将句子视为无结构的单词序列）
-
-    奠基之作：*《A statistical approach to machine translation》*(简称Brown90)
-
-
-
-
+    观点挖掘
 
 
 
@@ -181,16 +220,38 @@ NMT(Neural Machine Translation)
 ---
 
 ### 对抗样本和对抗网络
-参见我的博客文章 [对抗样本和对抗网络](http://www.lancezhange.com/2015/11/19/adversarial-samples/)
 
 
+所谓对抗 样本是指将实际样本略加扰动而构造出的合成样本，对该样本，分类器非常容易将其类别判错，这意味着光滑性假设(*相似的样本应该以很高的概率被判为同一类别*)某种程度上被推翻了。<!--more-->
+
+[Intriguing properties of neural networks, by Christian Szegedy at Google, et al，2014](http://arxiv.org/pdf/1312.6199.pdf). 这篇论文应该是最早提出对抗样本概念的。论文指出，包括卷积神经网络在内的深度学习模型在对抗样本面前都十分脆弱，从而将矛头直指深度学习，似乎要为深度学习热潮降一降温。
+
+[*Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images*, by Nguyen A, et al, CVPR 15](http://arxiv.org/pdf/1412.1897.pdf)一文更是发现，面对一些人类完全无法识别的样本（论文中称为 **Fooling Examples**），深度学习模型居然会以高置信度将它们进行分类，例如将噪声识别为狮子。这意味着这些模型很容易被愚弄，例如垃圾邮件发送者可能利用对抗样本来骗过垃圾邮件识别系统，目下依赖人脸验证的人脸支付等新潮科技也将面临巨大风险。当然了，只要谷歌不公开他们的垃圾邮件过滤模型的架构，骗子们似乎也无法针对它大规模制造对抗样本，所以我们不用过分紧张，把模型藏好就可以了。然而，可怕的是，在不同训练子集上用不同的架构学习的不同的模型，居然能够被同一套对抗样本愚弄！这意味着骗子们可以自己训练出一个模型，并在此模型上找到一组对抗样本之后就能通吃其他模型了，想想还真是可怕。
+
+那么，对抗样本只是我们的模型照顾不到的一小部分法外之地吗？论文 [Exploring the Space of Adversarial Images(ICLR 2016, under review)](http://arxiv.org/abs/1510.05328)(代码在[这里](https://github.com/tabacof/adversarial))给出了否定的答案，至少在图像空间中，对抗图片绝非孤立点，而是占据了很大一部分空间！[作者放出的生成对抗图像的代码在此](https://github.com/tabacof/adversarial)。
+
+这些研究的提出，一方面促使人们更深入思考机器和人的视觉的真正差异所在，一方面，加上深度模型本身具有的不可解释性缺陷，也让一些人开始认为深度学习不是*deep learning*, 而是*deep flaw*.对深度学习来说，这多少是不公平的指责，因为 kdnuggets上的一篇文章[(Deep Learning’s Deep Flaws)’s Deep Flaws, by Zachary Chase Lipton](http://www.kdnuggets.com/2015/01/deep-learning-flaws-universal-machine-learning.html)指出，深度学习对于对抗样本的脆弱性并不是深度学习所独有的，事实上，这在很多机器学习模型中都普遍存在（Box 大人不就说吗，*all models are wrong, but some are useful*），而深度学习反而可能是目前为止对对抗训练最有抵抗性的技术。这篇文章吸引了包括 Bengio 大牛、Ian Goodfellow 等在内的许多人的热烈讨论，Ian Goodfellow（八卦一下，Ian Goodfellow 是 Bengio 的高徒，目前任职于谷歌，是对抗网络方面的大牛）更是结合这些评论和自己的工作，写了另外一篇文章： [Deep Learning Adversarial Examples – Clarifying Misconceptions](http://www.kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html)，中文翻译在此：[深度学习对抗样本的八个误解与事实](http://m.csdn.net/article_pt.html?arcid=2825248)。
+
+
+那么，导致深度模型对反抗样本力不从心的真实原因有哪些呢？一般我们知道，可能是模型过拟合导致泛化能力不够，泛化能力不够可能是由于模型均化不足或者正则不足，然而，通过更多模型均化和加入更多噪声训练等方式来应对对抗样本的企图均告失败。另外一个猜测是模型的高度非线性，深度模型动辄千百万的参数个数确实让人有点不太舒服（冯诺依曼不就说吗，给他四个参数，他就能模拟大象，五个参数，大象就能摇尾巴了（还真有人写论文探讨如何模拟大象，参见[Drawing an elephant with four complext parameters](https://publications.mpi-cbg.de/Mayer_2010_4314.pdf)）），但 Ian Goodfellow 在论文 [explaining and harnessing adversarial examples, ICLR 2015](http://arxiv.org/pdf/1412.6572.pdf) 中，通过在一个线性模型中加入对抗干扰，发现只要线性模型的输入拥有足够的维度（事实上大部分情况下，模型输入的维度都比较大，因为维度过小的输入会导致模型的准确率过低，即欠拟合），线性模型也对对抗样本表现出明显的脆弱性，这驳斥了关于对抗样本是因为模型的高度非线性的解释。事实上，该文指出，高维空间中的线性性就足以造成对抗样本，深度模型对对抗样本的无力最主要的还是由于其线性部分的存在（*primary cause of neural networks’ vulnerability to adversarial perturbation is their linear nature*）。
+
+毫无疑问，对抗样本带来了对深度学习的质疑（如果能借此灭一灭深度学习的虚火，也是好的，现在相关领域的论文，*无深度，不论文*，灌水的太多，随便改一改模型的架构，调一调参数就能发表，结果好了也不知道好的原因 --- 吐槽完毕），但其实这也提供了一个修正深度模型的机会，因为我们可以反过来利用对抗样本来提高模型的抗干扰能力，因此有了*对抗训练(adversarial training)* 的概念。通过对抗训练，相当于加上了一种形式的正则，可以提高模型的鲁棒性。
+
+随着对对抗样本的更多更深入研究，人们逐渐发现，对抗样本并不是诅咒，而是祝福，因为可以利用对抗样本生成对抗网络(GANs)。[Generative Adversarial Networks, by Ian Goodfellow, et al, ](http://arxiv.org/abs/1406.2661) 最早提出了 *GANs* 的概念。在 GANs 中，包含一个生成模型G和一个判别模型D，D要判别样本是来自G还是真实数据集，而G的目标是生成能够骗过D的对抗样本，可以将G看做假币生产者，而D就是警察，通过G和D的不断交手，彼此的技能都会逐渐提高，最终使得G生产的假币能够以假乱真。
+受此启发，[Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks， by Emily Denton, et al](http://arxiv.org/abs/1506.05751)通过为拉普拉斯金字塔中的每一个尺度建立一个生成模型，使得最终生成的图片与自然图片达到肉眼无法区分的地步，代码参见[项目eyescream](https://github.com/facebook/eyescream) 。还有人用 GANs [生成猫脸的图片](https://github.com/aleju/cat-generator)，也有人用它[生成人脸](http://torch.ch/blog/2015/11/13/gan.html)，GANs 真是简直要被玩坏了。进一步，[Conditional generative adversarial nets for convolutional face generationby Jon Gauthier](http://www.foldl.me/2015/conditional-gans-face-generation/)提出了条件生成对抗网络。文中给出了一个将人脸老化并加上笑容的例子，简直碉堡。
+
+![老化笑脸](../images/oldface.png)
+
+注：本文收录于我的博客文章 [对抗样本和对抗网络](http://www.lancezhange.com/2015/11/19/adversarial-samples/)，该博文上次更新时间为　2015-11
 
 
 ----
 
-### 注意机制(attension)
+### 注意机制(attension)专题
 
-基于 *Attension* 的模型近年来也越来越受重视。Attension 大约在2014年的时候被引入计算机视觉领域，后来逐渐扩张到了NLP.
+本文严重参考了 [Survey on Attension-based Models Applied in NLP, 2015.10.07](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)和 [Survey on Attention-based Models Applied in NLP](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)一文。
+
+基于 *Attension* 的模型近年来越来越受重视。Attension 大约在2014年的时候被引入计算机视觉领域，后来逐渐扩张到了NLP.
 
 注意机制的核心问题在于：如何确定在哪里倾注注意力。就好比老师在期末考试复习的时候告诉大家要抓重点，但真正的问题在于重点在哪里。
 
@@ -247,34 +308,22 @@ Contexts by Qiang LIu, et al., 中科院](http://www.shuwu.name/sw/Predicting%20
 
     时空上下文。
 
-- [Policy Gradient Methods](http://www.scholarpedia.org/article/Policy_gradient_methods)
 
-    策略梯度，
 
-数据集
+
+---
+
+### 数据集
 [Street View House Numbers(SVHN)](http://ufldl.stanford.edu/housenumbers/)
 
-本文严重参考了 [Survey on Attension-based Models Applied in NLP, 2015.10.07](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)和 [Survey on Attention-based Models Applied in NLP](http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html)一文。
 
 
-
----
-
-### 神经变分推断(neural variational inference)
 
 
 
 
 
 ---
-### 深度隐变量模型(deep latent variabl models)
-
-[Neural Variational Inference for Text Processing, by Yishu Miao, et al., Oxford, ICLR 2016, under review](http://arxiv.org/pdf/1511.06038v1.pdf)
-
-
-
-
-
 
 ### 学习资料
 
@@ -285,8 +334,13 @@ Contexts by Qiang LIu, et al., 中科院](http://www.shuwu.name/sw/Predicting%20
 3. [A Statistical View of Deep Learning](http://blog.shakirm.com/wp-content/uploads/2015/07/SVDL.pdf)
     用统计学的视角看深度学习，待认真研读。
 
+4. [Deep Learning](http://goodfeli.github.io/dlbook/)
 
+    Ian Goodfellow, Aaron Courville 以及 Yoshua Bengio　三人合著。
 
+5. [Neural Networks and Deep Learning ](http://neuralnetworksanddeeplearning.com/)
+
+    也许是最好的入门教程？
 
 
 

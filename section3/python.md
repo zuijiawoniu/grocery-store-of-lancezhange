@@ -102,6 +102,9 @@ debug： *pdb*模块
 2. C API
 
 
+### 单元测试
+[Python 单元测试和　Mock 测试](http://andrewliu.in/2015/12/12/Python%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%92%8CMock%E6%B5%8B%E8%AF%95/)
+
 #### 其他
  1. 使用 *LBYL*(look before you leap, 例如前置 if 条件判断) 还是 *EAFP*(easy to ask forgiveness than permission，例如 `try--catch`)? 这里给出了一个[建议](http://stackoverflow.com/questions/5589532/try-catch-or-validation-for-speed/)
 

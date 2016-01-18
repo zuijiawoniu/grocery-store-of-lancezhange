@@ -1,5 +1,7 @@
 # 人工智能专题
 
+AI 的发展，其实大致也是经历了从逻辑，到概率，再到数据驱动下的深度学习这么三个阶段(参见[Deep Learning vs Probabilistic Graphical Models vs Logic](http://www.computervisionblog.com/2015/04/deep-learning-vs-probabilistic.html))
+
 
 how could a computer learn that you can pull a box with a string but not push it?
 
@@ -15,6 +17,9 @@ how could a computer learn that you can pull a box with a string but not push it
 
 [paper: Teach Deep Convolutional Networks to plau Go](http://arxiv.org/abs/1412.3409)
 
+
+---
+
 ### 机器人
 
 [机器人产业将是下一个千亿美元级别的市场](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400430504&idx=1&sn=6126fda783c335033cc3f7d0ed76eb5d&scene=0#wechat_redirect)
@@ -22,11 +27,17 @@ how could a computer learn that you can pull a box with a string but not push it
 [Alpha 2](https://www.indiegogo.com/projects/alpha-2-the-first-humanoid-robot-for-the-family#/): 简直碉堡，太想要一个了啊。深圳优必选公司出品，目前还在 INDIEGOGO 上众筹，远超目标，国产骄傲。
 
 
+---
 
 ### VR(virtual reality)
+
+
 [VR 来了！](http://mp.weixin.qq.com/s?__biz=MjM5NjQ1MTkyMA==&mid=400515864&idx=2&sn=8c7c69adc7adccf6df56170146d66a46&scene=2&srcid=1115YVpRK9fGqsHmQIIMm699&from=timeline&isappinstalled=0#wechat_redirect)
 
+[virtual racing](http://video.weibo.com/show?fid=1034:0a97edfd501ce89a018989a50688b184)
 
+
+---
 
 ### 资料
 1. [Awesome AI](https://github.com/kjw0612/awesome-ai)

@@ -1,5 +1,7 @@
 # 前端技术专题
 
+根据程序员的鄙视链，React.js > AnjularJS > Jquery
+
 ### Ajax
 XMLHttoRequest 对象
 

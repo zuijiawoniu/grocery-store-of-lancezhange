@@ -10,3 +10,24 @@
 
 [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/)
 
+
+很多时候数据分析的目的在于讲一个好故事。
+
+
+### 异常检测专题(Anomaly Detection)
+
+异常检测的应用是显而易见的：反欺诈、等。
+
+[the Numenta Anomaly Benchmark](https://github.com/numenta/NAB)
+
+
+- [Anomaly Detection : A Survey](http://www.datascienceassn.org/sites/default/files/Anomaly%20Detection%20A%20Survey.pdf)
+
+    综述文章
+
+- [Outlier Analysis](http://charuaggarwal.net/outlierbook.pdf)
+
+    一本专著
+
+
+### 因果分析(Causal Analysis)

@@ -3,29 +3,6 @@
 
 
 
-值得关注的开源库
-
-- [Breeze](https://github.com/scalanlp/breeze)
-
-    A numerical processing library for Scala
-
-- [Akka](https://github.com/akka/akka)
-
-- [sbt](https://github.com/sbt/sbt)
-
-
-- Spark 大数据利器
-
-- Play 大名鼎鼎的框架
-
-- [Spray](https://github.com/spray/spray)
-
-    另一款框架。A suite of scala libraries for building and consuming RESTful web services on top of Akka: lightweight, asynchronous, non-blocking, actor-based, testable
-
-- logback 日志系统
-
-
-更多参见 [Awesome scala](https://github.com/lauris/awesome-scala)
 
 
 
@@ -191,10 +168,50 @@ scala 中，一切皆对象，包括数字、函数等都是对象，而 java �
 scala 中的无参方法和零参方法：前者无论定义还是调用，都没有括号，就好像字段一样
 
 
+### [scala 宏](http://scalamacros.org/)
+宏在代码生成等方面是很有用的
 
+在2.10和2.11中都是实验性质，且只有　def 宏，后续会加入　Type Macros 等。
+
+Macros are functions that are called by the compiler during compilation
+
+```{scala}
+def m(x: T): R = macro implRef
+```
+
+---
+
+### scala 周边
+
+- [Breeze](https://github.com/scalanlp/breeze)
+
+    A numerical processing library for Scala
+
+- [Akka](https://github.com/akka/akka)
+
+- [sbt](https://github.com/sbt/sbt)
+
+
+- Spark 大数据利器
+
+- Play 大名鼎鼎的框架
+
+- [Spray](https://github.com/spray/spray)
+
+    另一款框架。A suite of scala libraries for building and consuming RESTful web services on top of Akka: lightweight, asynchronous, non-blocking, actor-based, testable
+
+- logback 日志系统
+
+
+更多参见 [Awesome scala](https://github.com/lauris/awesome-scala)
+
+---
 
 ### 风格指南
 [Databricks Scala Guide](https://github.com/databricks/scala-style-guide)
+
+
+---
 
 ### 资料
 

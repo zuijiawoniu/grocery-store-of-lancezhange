@@ -1,3 +1,9 @@
 {
-    "plugins": ["katex", "image-captions"]
+    "plugins": ["katex", "image-captions", "todo", "duoshuo"],
+    "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "lancezhange",
+            "theme": "default"
+        }
+    }
 }
