@@ -45,7 +45,7 @@
         
     
     
-    <link rel="next" href="../section6/mobile.html" />
+    <link rel="next" href="../section6/backendArchitecture.html" />
     
     
     <link rel="prev" href="../section6/visualization.html" />
@@ -56,7 +56,7 @@
     <body>
         
         
-    <div class="book" data-level="6.18" data-chapter-title="前端技术专题" data-filepath="section6/frontend.md" data-basepath=".." data-revision="Mon Jan 18 2016 10:41:22 GMT+0800 (CST)">
+    <div class="book" data-level="6.18" data-chapter-title="前端技术专题" data-filepath="section6/frontend.md" data-basepath=".." data-revision="Mon Jan 25 2016 22:44:52 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -805,14 +805,29 @@
             
         </li>
     
-        <li class="chapter " data-level="6.19" data-path="section6/mobile.html">
+        <li class="chapter " data-level="6.19" data-path="section6/backendArchitecture.html">
+            
+                
+                    <a href="../section6/backendArchitecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.19.</b>
+                        
+                        后端架构专题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.20" data-path="section6/mobile.html">
             
                 
                     <a href="../section6/mobile.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>6.19.</b>
+                            <b>6.20.</b>
                         
                         移动互联网专题
                     </a>
@@ -820,29 +835,29 @@
             
         </li>
     
-        <li class="chapter " data-level="6.20" data-path="section6/industry.html">
+        <li class="chapter " data-level="6.21" data-path="section6/industry.html">
             
                 
                     <a href="../section6/industry.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>6.20.</b>
+                            <b>6.21.</b>
                         
-                        工业实践
+                        产品工业实践
                     </a>
             
             
         </li>
     
-        <li class="chapter " data-level="6.21" data-path="section6/cuttingEdge.html">
+        <li class="chapter " data-level="6.22" data-path="section6/cuttingEdge.html">
             
                 
                     <a href="../section6/cuttingEdge.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>6.21.</b>
+                            <b>6.22.</b>
                         
                         前沿
                     </a>
@@ -1267,48 +1282,25 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x524D;&#x7AEF;&#x6280;&#x672F;&#x4E13;&#x9898;">&#x524D;&#x7AEF;&#x6280;&#x672F;&#x4E13;&#x9898;</h1>
-<p>&#x6839;&#x636E;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x9119;&#x89C6;&#x94FE;&#xFF0C;React.js &gt; AnjularJS &gt; Jquery</p>
-<h3 id="ajax">Ajax</h3>
-<p>XMLHttoRequest &#x5BF9;&#x8C61;</p>
-<p>open(method, URL, async)</p>
-<p>send(string)</p>
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-function loadXMLDoc()
-{
-var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200)
-    {
-    document.getElementById(&quot;myDiv&quot;).innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open(&quot;GET&quot;,&quot;/ajax/demo_get2.asp?fname=Bill&amp;lname=Gates&quot;,true);
-xmlhttp.send();
-}
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;h2&gt;AJAX&lt;/h2&gt;
-&lt;button type=&quot;button&quot; onclick=&quot;loadXMLDoc()&quot;&gt;&#x8BF7;&#x6C42;&#x6570;&#x636E;&lt;/button&gt;
-&lt;div id=&quot;myDiv&quot;&gt;&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>&#x5F53;&#x52A0;&#x8F7D;&#x7684; js &#x6587;&#x4EF6;&#x8F83;&#x591A;&#xFF0C;&#x4E14; js &#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7E41;&#x6742;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624B;&#x52A8;&#x5F15;&#x5165;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x6A21;&#x5757;&#x5316;&#x7BA1;&#x7406;&#x3002;require.js &#x53EF;&#x4EE5;&#x5B9E;&#x73B0; js &#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://www.ruanyifeng.com/blog/2014/09/package-management.html" target="_blank">&#x524D;&#x6BB5;&#x6A21;&#x5757;&#x7BA1;&#x7406;&#x5668;&#x7B80;&#x4ECB; by &#x962E;&#x4E00;&#x5CF0;</a>&#x3002;&#x4F46;&#x662F; require.js &#x6BD4;&#x8F83;&#x7E41;&#x7410;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x5E76;&#x4E0D;&#x723D;&#x3002;Bwowserify.</p>
-<p>&#x524D;&#x7AEF;&#x5305;&#x7BA1;&#x7406;&#x5668;</p>
-<p>Bowe(&#x548C; npm &#x7C7B;&#x4F3C;&#xFF0C;npm &#x591A;&#x7528;&#x5728;&#x540E;&#x7AEF;&#x800C;&#x5DF2;).</p>
+<p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x60F3;&#x81EA;&#x5B66;&#x4E00;&#x70B9;&#x524D;&#x7AEF;&#x77E5;&#x8BC6;&#x7684;&#x524D;&#x7AEF;&#x95E8;&#x5916;&#x6C49;&#xFF0C;&#x5148;&#x6765;&#x5BF9;&#x76F8;&#x5173;&#x7684;&#x4E1C;&#x897F;&#x505A;&#x4E00;&#x4E2A;&#x5B8F;&#x89C2;&#x6982;&#x89C8;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6700;&#x57FA;&#x672C;&#x7684;&#x662F;&#x3000;html, css &#x548C;&#x3000;javascript. &#x8FD9;&#x4E09;&#x90E8;&#x5206;&#x662F;&#x7EAF;&#x524D;&#x7AEF;&#x90E8;&#x5206;&#xFF0C;&#x540E;&#x6765;&#x51FA;&#x73B0;&#x7684;&#x5404;&#x79CD;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x9488;&#x5BF9;&#x8FD9;&#x4E09;&#x8005;&#x5728;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x3001;&#x4EE3;&#x7801;&#x7EF4;&#x62A4;&#x3001;&#x590D;&#x7528;&#x3001;&#x6784;&#x5EFA;&#x7B49;&#x65B9;&#x9762;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#x800C;&#x8FDB;&#x884C;&#x7684;&#x8865;&#x5145;&#xFF0F;&#x5B8C;&#x5584;&#xFF0F;&#x4F18;&#x5316;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;CSS &#x672C;&#x8EAB;&#x7684;&#x8BBE;&#x8BA1;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x5229;&#x4E8E;&#x5DE5;&#x7A0B;&#x5316;&#x3001;&#x5F71;&#x54CD;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x8FD9;&#x6B63;&#x662F; CSS &#x9884;/&#x540E;&#x5904;&#x7406;&#x5668;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x6539;&#x8FDB;&#x4EE3;&#x7801;&#x7684;&#x7EC4;&#x7EC7;&#x548C;&#x590D;&#x7528;&#xFF0C;&#x66F4;&#x7B80;&#x6D01;&#x5730;&#x5199;&#x5D4C;&#x5957;&#xFF0C;&#x51CF;&#x5C11;&#x7C7B;&#x540D;&#x6C61;&#x67D3;&#x7B49;&#x3002;</p>
+<p>typescript &#x662F;&#x5FAE;&#x8F6F;&#x5F00;&#x6E90;&#x7684;&#x2018;&#x66F4;&#x597D;&#x7684;&#x3000;javascript&#x2019;&#xFF08;&#x4F5C;&#x8005;Anders Hejlsberg&#xFF0C;C#&#x4E4B;&#x7236;&#xFF09;&#xFF0C;&#x5176;&#x4EE3;&#x7801;&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#x6210;&#x4E3A;&#x6807;&#x51C6;&#x3000;javascript &#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x5176;&#x5B9E;&#x662F;&#x3000;javascript &#x7684;&#x8D85;&#x96C6;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;&#x4E25;&#x683C;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x673A;&#x5236;&#xFF1B;&#x5176;&#x4ED6;&#x5982;&#x3000;Babel, CoffeScript &#x4E5F;&#x662F;&#x5BF9;&#x3000;javascript &#x7684;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x5176;&#x6B21;&#x662F;&#x4E00;&#x4E9B;&#x6A21;&#x5757;&#x5316;&#x548C;&#x6D41;&#x7A0B;&#x5316;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x4F8B;&#x5982;&#x524D;&#x7AEF;&#x5305;&#x7BA1;&#x7406;&#x5668;Bowe(&#x548C; npm &#x7C7B;&#x4F3C;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x3000;npm &#x591A;&#x7528;&#x5728;&#x540E;&#x7AEF;&#x800C;&#x5DF2;).&#x3000;require.js &#x53EF;&#x4EE5;&#x5B9E;&#x73B0; js &#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF08;&#x4F46;&#x662F; require.js &#x636E;&#x8BF4;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x5E76;&#x4E0D;&#x90A3;&#x4E48;&#x723D;&#xFF0C;&#x5DF2;&#x7ECF;&#x5F0F;&#x5FAE;&#xFF09;&#x3002;&#x7C7B;&#x4F3C;&#x7684;&#x8FD8;&#x6709; Browserify.</p>
+<p>&#x6700;&#x540E;&#x662F;&#x66F4;&#x4E3A;&#x65B0;&#x6F6E;&#x7684;&#x7EC4;&#x4EF6;&#x5316;&#x6846;&#x67B6;&#x3002;&#x4F8B;&#x5982;&#x3000;React, Angular 2,  Polymer, Vue.</p>
+<p>&#x53C2;&#x8003;&#x3000;<a href="http://www.cnblogs.com/aoldman/p/4445168.html" target="_blank">2015&#x524D;&#x7AEF;&#x7EC4;&#x4EF6;&#x5316;&#x6846;&#x67B6;&#x4E4B;&#x8DEF;</a></p>
+<h3 id="&#x6A21;&#x5F0F;&#x4E4B;&#x4E89;">&#x6A21;&#x5F0F;&#x4E4B;&#x4E89;</h3>
+<p>MVC(model-view-controller)
+MVP(model-view-presenter)
+MVVM(model-view-ViewModel)</p>
+<p>FLUX</p>
+<hr>
+<h3 id="&#x591A;&#x4F59;&#x7684;&#x8BDD;">&#x591A;&#x4F59;&#x7684;&#x8BDD;</h3>
+<p>&#x524D;&#x7AEF;&#x76F8;&#x5BF9;&#x800C;&#x8A00;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x65B0;&#x4E14;&#x77E5;&#x8BC6;&#x66F4;&#x65B0;&#x975E;&#x5E38;&#x5FEB;&#x7684;&#x9886;&#x57DF;&#xFF0C;&#x56E0;&#x6B64;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x65B0;&#x8001;&#x6280;&#x672F;&#x7684;&#x5BF9;&#x6390;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x542C;&#x5230;&#x7684;&#x9119;&#x89C6;&#x94FE;&#xFF0C;React.js &gt; AnjularJS &gt; Jquery&#xFF0C;2016&#x5E74;&#x5E74;&#x521D;&#xFF0C;&#x66F4;&#x662F;&#x7206;&#x53D1;&#x51FA;&#x5C24;&#x5C0F;&#x53F3;&#x548C;&#x771F;&#x963F;&#x5F53;&#x7684;&#x4E92;&#x6495;&#xFF08;&#x53C2;&#x89C1;&#x5E84;&#x8868;&#x4F1F;<a href="http://www.jianshu.com/p/e1425f186e3d?utm_campaign=haruki&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo" target="_blank">&#x300A;&#x804A;&#x804A;&#x2018;&#x65B0;&#x6280;&#x672F;&#x2019;&#x300B;</a>&#xFF09;&#xFF0C;&#x582A;&#x79F0;&#x5E74;&#x5EA6;&#x524D;&#x7AEF;&#x6DF7;&#x6218;&#x3002;&#x6211;&#x6BD4;&#x8F83;&#x8BA4;&#x540C;&#x5E84;&#x8868;&#x4F1F;&#x7684;&#x610F;&#x89C1;</p>
+<blockquote>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5584;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x8D70;&#x5F2F;&#x8DEF;&#x4ED6;&#x4E5F;&#x5728;&#x5B66;&#x4E60;&#x3002;&#x5BF9;&#x4E8E;&#x4E0D;&#x5584;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x7B97;&#x5728;&#x4E00;&#x6761;&#x76F4;&#x9053;&#x4E0A;&#xFF0C;&#x4ED6;&#x4E5F;&#x6839;&#x672C;&#x5C31;&#x4E0D;&#x8D70;&#x554A;&#xFF01;---&#x4F55;&#x5FC5;&#x62C5;&#x5FC3;&#x5E74;&#x8F7B;&#x4EBA;&#x88AB;&#x5751;&#xFF1F;&#x62C5;&#x5FC3;&#x4ED6;&#x4EEC;&#x8D70;&#x5F2F;&#x8DEF;&#xFF1F;&#x8FD9;&#x6837;&#x624D;&#x6709;&#x5229;&#x4E8E;&#x4ED6;&#x4EEC;&#x6210;&#x957F;</p>
+</blockquote>
 
                     
                     </section>
@@ -1322,7 +1314,7 @@ xmlhttp.send();
         <a href="../section6/visualization.html" class="navigation navigation-prev " aria-label="Previous page: 可视化专题"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../section6/mobile.html" class="navigation navigation-next " aria-label="Next page: 移动互联网专题"><i class="fa fa-angle-right"></i></a>
+        <a href="../section6/backendArchitecture.html" class="navigation navigation-next " aria-label="Next page: 后端架构专题"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

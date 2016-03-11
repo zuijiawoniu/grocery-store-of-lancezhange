@@ -5,6 +5,14 @@
 问题的三种类型：what(who, when, where等实体事实型), how, why
 
 
+参考　
+
+[智能问答技术综述](http://mp.weixin.qq.com/s?__biz=MzIxNzE2MTM4OA==&mid=413066638&idx=1&sn=64f9469badfc5de2f3c59a4c9ad176d7&scene=2&srcid=01201tw7IA8ae8fXl9xyoKV4&from=timeline&isappinstalled=0#wechat_redirect) by 何世柱，et al.　文章对问答技术的发展和涉及的问题做了一个简要综述。
+
+
+
+
+
 
 
 ### 图片描述(Image Caption)专题

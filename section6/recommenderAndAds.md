@@ -10,12 +10,13 @@
 
 
 - 冷启动问题
-- 推荐差异化 摆脱‘过滤气泡’造成的智识孤立
+- 推荐差异化、个性化　
+- 推荐动态化
+所谓动态化是指，所推荐的东西的疆域不能是封闭的，要对用户进行适当引领，摆脱‘过滤气泡’造成的智识孤立
 
 ##### 参考资料
 1. [Amazon.com Recommendations: Item-to-Item Collaborative Filtering](http://www.cin.ufpe.br/~idal/rs/Amazon-Recommendations.pdf)
 
-2. 
 
 
 

@@ -2,14 +2,16 @@
 
 
 ### 电影
+
 [电影首发站](http://www.dysfz.net/)
+
 
 
 ### 美女
 [Hot Israeli Army Girls](https://instagram.com/hotisraeliarmygirls/)
 
 
-### 其他
+### 程序员笑料私人订制
 
 [IT圈速成装逼指南](http://litten.github.io/2015/02/21/guide-for-zb/)
 

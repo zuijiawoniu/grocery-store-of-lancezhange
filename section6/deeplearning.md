@@ -76,6 +76,12 @@ CNN 已经有了诸多成熟的架构
 
     SenseTime(商汤科技，一家专注于计算机视觉和深度学习原创技术的中国公司)研究人员出品，[代码在此](https://github.com/jimmy-ren/vcnn_double-bladed/tree/master/applications/Shepard_CNN)。可用在超分辨率重建，图像修补等。
 
+- PlaNet
+
+   [PlaNet - Photo Geolocation with Convolutional Neural Networks](http://arxiv.org/abs/1602.05314)
+
+   谷歌的工作，仅用图片的像素来定位图片位置
+
 
 ---
 
@@ -253,7 +259,7 @@ Recurrent Neural Networks](http://arxiv.org/pdf/1506.03099v3.pdf) by Sami Bengio
 
 基于 *Attension* 的模型近年来越来越受重视。Attension 大约在2014年的时候被引入计算机视觉领域，后来逐渐扩张到了NLP.
 
-注意机制的核心问题在于：如何确定在哪里倾注注意力。就好比老师在期末考试复习的时候告诉大家要抓重点，但真正的问题在于重点在哪里。
+注意机制的核心问题在于：如何确定在哪里倾注注意力以及如何量化。就好比老师在期末考试复习的时候告诉大家要抓重点，但真正的问题在于重点在哪里。
 
 软对齐模型(soft alignment models) 和硬对齐模型(hard alignment models)
 

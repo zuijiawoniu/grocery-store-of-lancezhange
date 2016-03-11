@@ -25,6 +25,8 @@
 正如计算机视觉领域所经受的那样，NLP也经历了传统方法的兴盛（所谓的理性时代），后来Deep Learning 成功入侵了语音和视觉领域，并最终在自然语言处理方面也展现了它强大的存在，使得传统方法逐渐走向没落（当然，或许有朝一日，理性主义会卷土重来）。
 
 
+参考　[穿越乔家大院寻找“毛毛虫”](http://blog.sina.com.cn/s/blog_729574a00102wf63.html) by 白硕
+
 
 
 ##### 语法分析
@@ -115,6 +117,10 @@ word2vec
 - [Word Representations via Gaussian Embedding by by Luke Vilnis, et al., 2014](http://arxiv.org/abs/1412.6623)
 
 - [Not All Contexts Are Created Equal: Better Word Representations with Variable Attention](http://www.cs.cmu.edu/~lingwang/papers/emnlp2015-2.pdf)
+
+
+- [lda2vec](https://github.com/cemoody/lda2vec) by Chris Moody
+
 
 
 
@@ -277,7 +283,8 @@ First Order Probablistic Logic
 
 
 
-### 语料
+### 语料资源
+
 - [WordNet](http://wordnet.princeton.edu/)
 
     普林斯顿大学的科研人员设计的一个基于认知语言学的英语字典，它将单词按照意义组合成不同的同义词集合，并记录了这些集合之间的层次关系。
@@ -289,6 +296,8 @@ First Order Probablistic Logic
 - [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/home)
 
     伯克利出品。按照情景(frame)组织，每种情景由其触发词汇。缺点：frame那么多，我们永远也弄不全的！
+
+- HowNet
 
 
 

@@ -1,4 +1,7 @@
-# 工业实践
+# 产品工业实践
+
+
+
 
 ### A/B Testing
 
@@ -27,3 +30,10 @@ A/B 测试要点
 
 
 
+---
+互联网的价值
+
+互联网作用于社会的方式：连接一切
+
+>关系赋权
+by [喻国明：互联网的价值本质是网络连接之下的关系赋权](http://mp.weixin.qq.com/s?__biz=MzI5NzAyODEzMw==&mid=401819581&idx=1&sn=dda264ad06b493e1a27adf10aabde034&scene=23&srcid=0217CCf3bpc0gFToASKEYDDb#rd)
